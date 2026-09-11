@@ -1,0 +1,400 @@
+* {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    box-sizing: border-box;
+    color: #2B2B2B;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    border-radius: 90px;
+}
+
+.img img {
+    max-height: 100px;
+    border-radius: 90px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #000000;
+}
+
+.links {
+    display: flex;
+    gap: 22px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #C68B59;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #2C1A0E;
+    border-radius: 20px;
+    color: #F8F9FA;
+    transform: translateY(-6px);
+    transition: 0.3s ease;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    margin: 50px auto 0;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.banner-conteudo {
+    position: absolute;
+    top: 40%;
+    left: 50px;
+    color: #FFFFFF;
+    transform: translateY(-50%);
+    max-width: 500px;
+    font-family: sans-serif;
+}
+
+.banner-conteudo h1 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0 0 20px 0;
+}
+
+.banner-conteudo h1 {
+    color: #C68B59;
+}
+
+.banner-conteudo p {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #E0E0E0;
+    margin: 0;
+}
+
+footer {
+    background-color: #2C1A0E;
+    /* Marrom escuro espresso */
+    color: #FDFBF7;
+    /* Creme claro */
+    padding: 40px 20px 10px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.footer-coluna h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #C68B59;
+    /* Caramelo quente */
+}
+
+.footer-coluna ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-coluna ul li {
+    margin-bottom: 8px;
+}
+
+.footer-coluna a {
+    color: #E0D5C1;
+    /* Creme suave para os links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-coluna a:hover {
+    color: #C68B59;
+    /* Destaque caramelo ao passar o mouse */
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociais a {
+    background-color: #4A2C11;
+    /* Marrom café principal */
+    color: #FDFBF7;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.redes-sociais a:hover {
+    background-color: #C68B59;
+    /* Destaque em caramelo no hover */
+    color: #2C1A0E;
+}
+
+/* linha copyright */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #4A2C11;
+    /* Linha de divisão em tom marrom */
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #A89F91;
+}
+
+/* Estilo Padrão do Header */
+header {
+    background-color: #FDFBF7;
+    /* Fundo creme claro */
+    border-bottom: 2px solid #4A2C11;
+    /* Linha sutil marrom */
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+header .logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+/* Navegação */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: #4A2C11;
+    /* Marrom principal */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Efeito Hover nos links */
+header nav ul li a:hover {
+    color: #C68B59;
+    /* Destaque caramelo */
+}
+
+/* Seção Principal */
+.cardapio-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.cardapio-section h2 {
+    color: #4A2C11;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Grade de Produtos */
+.grid-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card-produto {
+    background-color: #FDFBF7;
+    border: 1px solid #4A2C11;
+    border-radius: 8px;
+    padding: 15px;
+    width: 220px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.card-produto:hover {
+    transform: translateY(-5px);
+}
+
+.foto-produto img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 22px;
+    background-color: #E0D5C1;
+}
+
+.card-produto h3 {
+    color: #4A2C11;
+    font-size: 18px;
+    margin: 12px 0 6px;
+}
+
+.card-produto .preco {
+    color: #C68B59;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Seção feedback */
+.feedback-section {
+    background-color: #FDFBF7;
+    border: 1px solid #4A2C11;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    margin: 40px auto; /* centraliza a section */
+}
+.feedback-section h2{
+     text-align: center;
+     font-size: 22px;
+     margin-bottom: 20px;
+}
+.form-group{
+    margin-bottom: 16px;
+    text-align: left;
+}
+.form-group > label {
+    display: block; /* deixa um embaixo do outro */
+    margin-bottom: 6px;
+    color: #4A2C11;
+    font-weight: bold;
+    font-size: 14px;
+}
+.feedback-section h2,
+.form-group label {
+    color: #4A2C11;
+}
+.form-group textarea{
+    resize: none;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    background-color: #FFFFFF;
+    border: 1px solid #C68B59;
+    color: #333;
+    border-radius: 22px;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+.form-group label:has(input[type="radio"]){
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.feedback-section button[type="submit"] {
+    background-color: #4A2C11;
+    color: #FDFBF7;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    padding: 12px;
+}
+
+.feedback-section button[type="submit"]:hover {
+    background-color: #C68B59;
+}
+/* ===================================================
+   SEÇÃO DAS LOJAS / UNIDADES
+   =================================================== */
+.lojas-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.lojas-section h2 {
+    color: #4A2C11;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.unidade-card {
+    background-color: #FDFBF7;
+    border: 1px solid #4A2C11;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.unidade-card h3 {
+    color: #4A2C11;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.unidade-card p {
+    color: #333333;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.mapa-foto {
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #C68B59;
+}
+
+.mapa-foto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+.mapa-foto iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 8px;
+}
