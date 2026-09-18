@@ -42,9 +42,9 @@ function cardapio() {
 document.addEventListener('DOMContentLoaded', cardapio);
 
 /* formulario */
-const form = document.getElementById('meu-formulario')
+/* const form = document.getElementById('meu-formulario')
 form.addEventListener('submit', (event) => {
     event.preventDefault()
     alert('Sua mensagem foi enviada com sucesso!')
     form.reset()
-})
+}) */
